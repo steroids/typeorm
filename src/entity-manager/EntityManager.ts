@@ -693,8 +693,6 @@ export class EntityManager {
             options = conflictPathsOrOptions
         }
 
-        options.skipUpdateIfNoValuesChanged = true
-
         let entities: QueryDeepPartialEntity<Entity>[]
 
         if (!Array.isArray(entityOrEntities)) {
